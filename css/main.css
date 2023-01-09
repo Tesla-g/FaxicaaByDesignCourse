@@ -96,6 +96,7 @@ h1 {
 }
 .emplyee-desc {
   font-size: 2rem;
+  line-height: 100%;
 }
 
 .left-col-down-content img {
@@ -103,4 +104,21 @@ h1 {
   top: -5px;
   left: -20px;
   z-index: 999;
+}
+
+div.right-col {
+  flex-grow: 1;
+  display: grid;
+  gap: 2.3em;
+  grid-template-columns: repeat(2, auto);
+  grid-template-areas:
+    "left right"
+    "left bottom";
+}
+div.left-col {
+  width: 45%;
+}
+
+.card {
+  background: gray;
 }
